@@ -1,0 +1,27 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    padding: 25px;
+    font-size: xx-large;
+    width: 150px;
+    border-style: solid;
+}
+
+.display {
+    border-style: solid;
+    margin: 0px;
+    background-color: white;
+    justify-content: center;
+    text-align: right;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.column div {
+    margin: auto;
+}
