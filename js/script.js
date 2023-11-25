@@ -35,3 +35,8 @@ function operate(firstNumber,operator,secondNumber) {
 let firstNumber;
 let operator;
 let secondNumber;
+
+let display = document.getElementById("display");
+let seven = document.getElementById("seven");
+
+display.textContent += 1;
