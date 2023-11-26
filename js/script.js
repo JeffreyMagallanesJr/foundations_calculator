@@ -32,11 +32,21 @@ function operate(firstNumber,operator,secondNumber) {
     return operator(firstNumber,secondNumber);
 }
 
+function displayNumber(number) {
+    display.textContent += number;
+}
+
 let firstNumber;
 let operator;
 let secondNumber;
 
 let display = document.getElementById("display");
-let seven = document.getElementById("seven");
+let seven = document.getElementById("7");
+let eight = document.getElementById("8");
 
-display.textContent += 1;
+seven.addEventListener("click", function() {
+    displayNumber(seven.textContent);
+});
+eight.addEventListener("click", function() {
+    displayNumber(eight.textContent);
+});
