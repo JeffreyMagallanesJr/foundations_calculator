@@ -19,6 +19,7 @@ body {
 }
 
 #display {
+    height:37px;
     border-style: solid;
     margin: 0px;
     background-color: white;
