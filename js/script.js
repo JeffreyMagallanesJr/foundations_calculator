@@ -40,9 +40,15 @@ let firstNumber;
 let operator;
 let secondNumber;
 
-let display = document.getElementById("display");
+let display = document.querySelector("#display");
 
+let numbers = Array.from(document.querySelectorAll(".number"));
 
+numbers.map(function (number) {
+    number.addEventListener("click", function() {
+        displayNumber(number.textContent);
+    })
+});
 
 // let seven = document.getElementById("7");
 // let eight = document.getElementById("8");
