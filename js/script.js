@@ -41,12 +41,15 @@ let operator;
 let secondNumber;
 
 let display = document.getElementById("display");
-let seven = document.getElementById("7");
-let eight = document.getElementById("8");
 
-seven.addEventListener("click", function() {
-    displayNumber(seven.textContent);
-});
-eight.addEventListener("click", function() {
-    displayNumber(eight.textContent);
-});
+
+
+// let seven = document.getElementById("7");
+// let eight = document.getElementById("8");
+
+// seven.addEventListener("click", function() {
+//     displayNumber(seven.textContent);
+// });
+// eight.addEventListener("click", function() {
+//     displayNumber(eight.textContent);
+// });
