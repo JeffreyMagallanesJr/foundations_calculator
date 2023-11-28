@@ -36,6 +36,8 @@ function displayNumber(number) {
     display.textContent += number;
 }
 
+const operatorSymbols = ["+","-","*","/"];
+const operatorNames = ["add","subtract","multiply","divide"];
 let firstNumber;
 let operator;
 let secondNumber;
@@ -49,6 +51,23 @@ numbers.map(function (number) {
         displayNumber(number.textContent);
     })
 });
+
+let operators = Array.from(document.querySelectorAll(".operator"));
+
+
+
+let operatorsSymbols = operators.map(function (item) {
+    return item.textContent;
+})
+let operatorsNames;
+
+operatorsNames = operatorsSymbols.map(function (item) {
+    return operatorNames[operatorsSymbols.indexOf(item)];
+})
+
+for (i in operatorsNames) {
+    console.log(i);
+}
 
 // let seven = document.getElementById("7");
 // let eight = document.getElementById("8");
