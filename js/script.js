@@ -15,20 +15,6 @@ function divide(a, b) {
 }
 
 function operate(firstNumber,operator,secondNumber) {
-    // switch(operator) {
-    //     case "+":
-    //         return add(firstNumber,secondNumber);
-    //         break;
-    //     case "-":
-    //         return subtract(firstNumber,secondNumber);
-    //         break;
-    //     case "*":
-    //         return multiply(firstNumber,secondNumber);
-    //         break;
-    //     case "/":
-    //         return divide(firstNumber,secondNumber);
-    //         break;
-    // }
     return operator(firstNumber,secondNumber);
 }
 
@@ -68,13 +54,3 @@ operatorsNames = operatorsSymbols.map(function (item) {
 for (i in operatorsNames) {
     console.log(i);
 }
-
-// let seven = document.getElementById("7");
-// let eight = document.getElementById("8");
-
-// seven.addEventListener("click", function() {
-//     displayNumber(seven.textContent);
-// });
-// eight.addEventListener("click", function() {
-//     displayNumber(eight.textContent);
-// });
