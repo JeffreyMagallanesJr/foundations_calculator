@@ -26,6 +26,11 @@ function populateDisplay(number) {
     displayValue = Number(display.textContent);
 }
 
+// Clear Function
+function clearDisplay() {
+    display.textContent = "";
+}
+
 // Initialize Variables
 let operator;
 let firstNumber;
@@ -41,6 +46,11 @@ numbers.forEach(function (number) {
     })
 });
 
+// Add clearDisplay function in clear button
+let clear = document.querySelector("#clear");
+clear.addEventListener("click", function() {
+    clearDisplay();
+});
 
 const operatorSymbols = ["+","-","*","/"];
 const operatorNames = ["add","subtract","multiply","divide"];
