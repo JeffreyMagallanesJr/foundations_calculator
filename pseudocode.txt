@@ -1,0 +1,11 @@
+when operatorButton is clicked:
+    if firstNumber is not empty and operator is not empty
+        store displayValue in secondNumber
+        store operate(firstNumber,operator,secondNumber) in firstNumber
+        store operatorButonName in operator
+        clear secondNumber
+        clear display
+        display firstNumber
+
+    store displayValue in firstNumber
+    store operatorButtonName in operator
