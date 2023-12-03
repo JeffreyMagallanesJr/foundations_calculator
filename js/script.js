@@ -51,22 +51,3 @@ let clear = document.querySelector("#clear");
 clear.addEventListener("click", function() {
     clearDisplay();
 });
-
-const operatorSymbols = ["+","-","*","/"];
-const operatorNames = ["add","subtract","multiply","divide"];
-
-let operators = Array.from(document.querySelectorAll(".operator"));
-
-let operatorsSymbols = operators.map(function (item) {
-    return item.textContent;
-})
-
-let operatorsNames;
-
-operatorsNames = operatorsSymbols.map(function (item) {
-    return operatorNames[operatorsSymbols.indexOf(item)];
-})
-
-for (i in operatorsNames) {
-    console.log(i);
-}
