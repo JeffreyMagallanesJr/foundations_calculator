@@ -51,3 +51,20 @@ let clear = document.querySelector("#clear");
 clear.addEventListener("click", function() {
     clearDisplay();
 });
+
+// let operatorButtons = Array.from(document.querySelectorAll(".operator"));
+// operatorButtons.forEach(function (operatorButton) {
+//     operatorButton.addEventListener("click", function() {
+//         if (firstNumber && operator) {
+//             secondNumber = displayValue;
+//             firstNumber = operate(firstNumber,operator,secondNumber);
+//             operator = operatorButton.id;
+//             clearDisplay();
+//             displayValue = firstNumber;
+//         };
+
+//         firstNumber = displayValue;
+//         operator = operatorButton.id;
+//     });
+
+// });
