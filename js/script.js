@@ -17,7 +17,7 @@ function divide(a, b) {
 
 // Operation Function
 function operate(firstNumber,operator,secondNumber) {
-    return operator(firstNumber,secondNumber);
+    return window[operator](firstNumber,secondNumber);
 }
 
 // Display Function
@@ -52,19 +52,19 @@ clear.addEventListener("click", function() {
     clearDisplay();
 });
 
-// let operatorButtons = Array.from(document.querySelectorAll(".operator"));
-// operatorButtons.forEach(function (operatorButton) {
-//     operatorButton.addEventListener("click", function() {
-//         if (firstNumber && operator) {
-//             secondNumber = displayValue;
-//             firstNumber = operate(firstNumber,operator,secondNumber);
-//             operator = operatorButton.id;
-//             clearDisplay();
-//             displayValue = firstNumber;
-//         };
+let operatorButtons = Array.from(document.querySelectorAll(".operator"));
+operatorButtons.forEach(function (operatorButton) {
+    operatorButton.addEventListener("click", function() {
+        if (firstNumber) {
+            secondNumber = displayValue;
+            firstNumber = operate(firstNumber,operator,secondNumber);
+            operator = operatorButton.id;
+            clearDisplay();
+            displayValue = firstNumber;
+        };
 
-//         firstNumber = displayValue;
-//         operator = operatorButton.id;
-//     });
-
-// });
+        firstNumber = displayValue;
+        operator = operatorButton.id;
+        clearDisplay();
+    });
+});
