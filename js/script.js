@@ -52,7 +52,13 @@ let oldNumber = false;
 let numbers = Array.from(document.querySelectorAll(".number"));
 numbers.forEach(function (number) {
     number.addEventListener("click", function() {
-        populateDisplay(number.textContent);
+        if (oldNumber) {
+            clearDisplay();
+            oldNumber = false;
+            populateDisplay(number.textContent);
+        } else {
+            populateDisplay(number.textContent);
+        }
     })
 });
 
