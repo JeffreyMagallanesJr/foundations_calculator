@@ -26,7 +26,7 @@ function populateDisplay(number) {
     displayValue = Number(display.textContent);
 }
 
-// Clear Function
+// Clear Display Function
 function clearDisplay() {
     display.textContent = "";
 }
