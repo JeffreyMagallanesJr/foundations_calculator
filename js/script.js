@@ -76,11 +76,13 @@ operatorButtons.forEach(function (operatorButton) {
             firstNumber = operate(firstNumber,operator,secondNumber);
             operator = operatorButton.id;
             clearDisplay();
-            displayValue = firstNumber;
-        };
-
-        firstNumber = displayValue;
-        operator = operatorButton.id;
-        clearDisplay();
+            display.textContent = firstNumber;
+            oldNumber = true;
+        } else {
+            firstNumber = displayValue;
+            operator = operatorButton.id;
+            oldNumber = true;
+        }
     });
+});
 });
