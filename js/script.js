@@ -62,10 +62,10 @@ numbers.forEach(function (number) {
     })
 });
 
-// Add clearDisplay function in clear button
+// Add clearAll function in clear button
 let clear = document.querySelector("#clear");
 clear.addEventListener("click", function() {
-    clearDisplay();
+    clearAll();
 });
 
 let operatorButtons = Array.from(document.querySelectorAll(".operator"));
