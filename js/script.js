@@ -31,6 +31,15 @@ function clearDisplay() {
     display.textContent = "";
 }
 
+// Clear All Function
+function clearAll() {
+    operator = undefined;
+    firstNumber = undefined;
+    secondNumber = undefined;
+    displayValue = undefined;
+    display.textContent = "";
+}
+
 // Initialize Variables
 let operator;
 let firstNumber;
