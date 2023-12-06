@@ -85,4 +85,10 @@ operatorButtons.forEach(function (operatorButton) {
         }
     });
 });
+
+let equalButton = document.querySelector("#equal");
+equalButton.addEventListener("click", function() {
+    secondNumber = displayValue;
+    display.textContent = operate(firstNumber,operator,secondNumber);
+    oldNumber = false;
 });
