@@ -46,6 +46,7 @@ let firstNumber;
 let secondNumber;
 let displayValue;
 let display = document.querySelector("#display");
+let oldNumber = false;
 
 // Add populateDisplay function in each number button
 let numbers = Array.from(document.querySelectorAll(".number"));
